@@ -8,7 +8,7 @@ Mimetize sensible data
 -r Refers to the rules you want to apply
 
 ```
-mimic -f ./file -r uuid date
+./mimic.exe -f ./file -r uuid date
 ```
 
 ## Available rules
