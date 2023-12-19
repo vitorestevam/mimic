@@ -4,7 +4,8 @@ Mimetize sensible data
 
 ## How to use
 
--f Refers to the file you want to mimetiza
+-f Refers to the file you want to mimetize
+
 -r Refers to the rules you want to apply
 
 ```
