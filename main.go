@@ -2,20 +2,21 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"os"
-	"strings"
 )
 
 func main() {
 	var fFile = flag.String("f", "", "file path")
-	var fRules = flag.String("r", "date uuid", "rules file path")
 	flag.Parse()
 
 	if fFile == nil || *fFile == "" {
 		panic("file path (-f) is required")
 	}
 
-	rules := strings.Split(*fRules, " ")
+	rules := flag.Args()
+
+	fmt.Println(rules)
 
 	file, err := os.ReadFile(*fFile)
 	if err != nil {

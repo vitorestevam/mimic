@@ -5,10 +5,11 @@ Mimetize sensible data
 ## How to use
 
 -f Refers to the file you want to mimetiza
--r Refers to the rules you want to apply
+
+The trailing arguments refers to the rules you want to apply
 
 ```
-mimic -f ./file -r uuid date
+mimic -f ./log.log  uuid date
 ```
 
 ## Available rules
